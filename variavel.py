@@ -37,24 +37,35 @@
 #3 - Criar uma lista com 10 números aleatórios,
 #itere esta lisa e printar os valores que são ímpares e pares,
 
-import random as r
+# import random as r
 
-lista = []
-lista_impar = []
-lista_par = []
-i = 1
+# lista = []
+# lista_impar = []
+# lista_par = []
+# i = 1
 
-while i <=10:
-    lista.append(r.randrange(1,100))
-    i = i + 1
+# while i <=10:
+#     lista.append(r.randrange(1,100))
+#     i = i + 1
 
-print (f'Esta foi a lista gerada aleatoriamente: {lista} ')
+# print (f'Esta foi a lista gerada aleatoriamente: {lista} ')
 
-for n in lista:
-    if n % 2 != 0:
-        lista_impar.append(n)
-    else:
-        lista_par.append(n)
+# for n in lista:
+#     if n % 2 != 0:
+#         lista_impar.append(n)
+#     else:
+#         lista_par.append(n)
 
-print (f'impares: {lista_impar}')
-print (f'pares: {lista_par}')
+# print (f'impares: {lista_impar}')
+# print (f'pares: {lista_par}')
+
+class Pessoa:
+
+    def __init__(self, nome):
+        self.nome = nome
+
+    def __init__(self):
+        return self.nome
+
+groger = Pessoa('Groger')
+print(groger)
